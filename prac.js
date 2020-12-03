@@ -1,3 +1,9 @@
-let name = 'Nnaemeka';
+//Mutate
+let name = `Nnaemeka`;
+name = `Joe`;
+console.log(name);
 
-console.log(`Hello, my name is ${name}`);
+//Non-Mutate
+const dob = 1999;
+console.log(dob);
+
