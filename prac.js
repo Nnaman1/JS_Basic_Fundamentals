@@ -15,3 +15,25 @@ console.log(x);
 //Comparison Operator
 
 console.log(billAge > joeAge);
+
+//Coding Toy Prop.
+
+let samWeight = 78;
+let joeWeight = 92;
+
+let samHeight = 1.69;
+let joeHeight = 1.76;
+
+let samBMI = samWeight / samHeight ** 2;
+let joeBMI = joeWeight / joeHeight ** 2;
+
+let samHigherBMI = samBMI > joeBMI;
+
+console.log(samHigherBMI)
+
+
+
+
+
+
+
