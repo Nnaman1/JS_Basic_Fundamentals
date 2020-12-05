@@ -13,24 +13,35 @@ x = + 22;
 console.log(x);
 
 //Comparison Operator
-
 console.log(billAge > joeAge);
 
 //Coding Toy Prop.
+const mikeWeight = 78;
+const mikeMass = 1.69 ** 2;
 
-let samWeight = 78;
-let joeWeight = 92;
+const joeWeight = 95;
+const joeMass = 1.22 ** 2;
 
-let samHeight = 1.69;
-let joeHeight = 1.76;
+const mikeBMI = mikeWeight / mikeMass;
+const joeBMI = joeWeight / joeMass;
 
-let samBMI = samWeight / samHeight ** 2;
-let joeBMI = joeWeight / joeHeight ** 2;
+const mikeHigherBMI = (mikeBMI > joeBMI);
+console.log(mikeHigherBMI);
 
-let samHigherBMI = samBMI > joeBMI;
 
-console.log(samHigherBMI)
+// IF statment
+const age = 21;
+const oldEnough = age >= 18;
 
+if (oldEnough) {
+    console.log(`Joe is ${age} so he can drive!`)
+}
+
+if (mikeBMI > joeBMI) {
+    console.log(`Mike BMI of ${mikeBMI} is greater than Joes!`);
+} else {
+    console.log(`Joe BMI is greater`);
+}
 
 
 
