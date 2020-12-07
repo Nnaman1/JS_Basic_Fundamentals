@@ -59,3 +59,20 @@ else if (liverpool === barcelona && liverpool || barcelona >= 100) {
 } else {
     console.log(`no winner`)
 }
+
+const day = `friday`;
+switch (day) {
+    case `monday`:
+        console.log(`today is Monday`);
+        break;
+    case `tuesday`:
+        console.log(`today is Tuesday`);
+        break;
+    default:
+        console.log(`None`);
+
+}
+
+const voteage = 24;
+voteage >= 18 ? console.log(`You can vote!`) :
+    console.log(`too young`);
