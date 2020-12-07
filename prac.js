@@ -46,3 +46,16 @@ if (mikeBMI > joeBMI) {
 
 console.log(String(22), 22);
 
+const barcelona = 300;
+const liverpool = 200;
+
+if (barcelona > liverpool && barcelona >= 100) {
+    console.log(`barcelona win!`);
+} else if (barcelona < liverpool && liverpool >= 100) {
+    console.log(`liverpool win!`);
+}
+else if (liverpool === barcelona && liverpool || barcelona >= 100) {
+    console.log(`Draw!`);
+} else {
+    console.log(`no winner`)
+}
