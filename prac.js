@@ -44,7 +44,5 @@ if (mikeBMI > joeBMI) {
 }
 
 
-
-
-
+console.log(String(22), 22);
 
