@@ -74,5 +74,7 @@ switch (day) {
 }
 
 const voteage = 24;
-voteage >= 18 ? console.log(`You can vote!`) :
-    console.log(`too young`);
+
+const vote = voteage >= 18 ? `You can vote` : `You can't vote yet`;
+console.log(vote);
+
