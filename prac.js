@@ -78,3 +78,11 @@ const voteage = 24;
 const vote = voteage >= 18 ? `You can vote` : `You can't vote yet`;
 console.log(vote);
 
+
+
+
+const bill = 1000;
+
+const tip = bill >= 50 && bill <= 500 ? bill * .2 : bill * .15;
+
+console.log(`My bill is ${bill}, my tip is ${tip} and my total is ${bill + tip}`);
