@@ -89,9 +89,11 @@ const tip = bill >= 50 && bill <= 500 ? bill * .2 : bill * .15;
 console.log(`My bill is ${bill}, my tip is ${tip} and my total is ${bill + tip}`);
 
 //function
-
 function sibling(brother, sister) {
     const ans = console.log(`Joe has ${brother} brother(s) and ${sister} sister(s) `);
     return ans;
 }
-sibling(22, 44);
+const howMany = sibling(22, 44);
+
+
+
