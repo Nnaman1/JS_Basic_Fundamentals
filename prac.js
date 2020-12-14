@@ -83,3 +83,11 @@ const tip = (myBill => 50 && myBill <= 500) ? myBill * .2 : myBill * .15;
 console.log(`My bill is ${myBill}, my tip is ${tip}, and my total is ${myBill + tip}`);
 
 
+//Functions 
+
+function juice(apple, cherry) {
+    const juicer = `I have ${apple} apples and ${cherry} cherries to make juice`;
+    return juicer
+}
+const myJuice = juice(22, 2);
+console.log(myJuice);
