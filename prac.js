@@ -63,35 +63,23 @@ else if (liverpool === barcelona && liverpool || barcelona >= 100) {
     console.log(`no winner`)
 }
 
-const day = `friday`;
+
+const day = `Friday`;
+
 switch (day) {
-    case `monday`:
-        console.log(`today is Monday`);
+    case `Monday`:
+        console.log(`Welcome to Monday!`);
         break;
-    case `tuesday`:
-        console.log(`today is Tuesday`);
+    case `Tuesday`:
+        console.log(`Welcome to Tuesday!`);
         break;
     default:
-        console.log(`None`);
-
+        console.log(`Not Monday or Tuesday!`);
 }
 
-const voteage = 24;
+const myBill = 200;
 
-const vote = voteage >= 18 ? `You can vote` : `You can't vote yet`;
-console.log(vote);
-
-
-const bill = 1000;
-
-const tip = bill >= 50 && bill <= 500 ? bill * .2 : bill * .15;
-console.log(`My bill was ${bill}, and my total tip was ${tip}. The total value is ${bill + tip}`)
-
-//function
-function sibling(brother, sister) {
-    const ans = console.log(`Joe has ${brother} brother(s) and ${sister} sister(s) `);
-    return ans;
-}
-const howMany = sibling(22, 44);
+const tip = (myBill => 50 && myBill <= 500) ? myBill * .2 : myBill * .15;
+console.log(`My bill is ${myBill}, my tip is ${tip}, and my total is ${myBill + tip}`);
 
 
