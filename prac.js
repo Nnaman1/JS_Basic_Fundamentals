@@ -84,7 +84,6 @@ console.log(`My bill is ${myBill}, my tip is ${tip}, and my total is ${myBill + 
 
 
 //Functions 
-
 function juice(apple, cherry) {
     const juicer = `I have ${apple} apples and ${cherry} cherries to make juice`;
     return juicer
