@@ -19,7 +19,7 @@ let lovesCode = true;
 //Create a variable called greatestFear that is undefined because we fear nothing
 
 let greatestFear;
-//////////////////PROBLEM 5////////////////////
+///////////////  ///PROBLEM 5////////////////////
 
 //Create a variable called devMountainGoal that is null because we are just starting out
 
@@ -31,8 +31,10 @@ let devMountainGoal = null;
 //greeting should return the string "Hello, "
 //plus the value of the name parameter.
 
-//Code here
-
+function greeting (name){
+  return `Hello ${name}`
+}
+greeting('Nnaemeka');
 //////////////////PROBLEM 7////////////////////
 
 //Write a function expression called newGreeting.
