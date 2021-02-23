@@ -1,16 +1,11 @@
-const num1 = 3;
-const num2 = 8;
+const birthYear = 2000;
 
-if (num1 == num2){
-    console.log('they are the same')
-}
-else {
-    console.log('They are not the same!')
-}
+let century;
 
-if (num1 == 3 && num2 != 9){
-    console.log('The math works')
-}
+if (birthYear <=2000){
+    century = 21;
+} 
 else {
-    console.log('The math is broken!')
+    century = 20;
 }
+console.log(century)
