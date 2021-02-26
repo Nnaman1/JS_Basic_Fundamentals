@@ -1,147 +1,68 @@
-//////////////////PROBLEM 1////////////////////
+// Variables and data types
+//Numbers
 
-//Create a variable called myName that is a string data type
+//Declare a variable called age and give it a value of your age.
 
-let myName = 'Nnaemeka Nnamani';
+//Declare a variable called 6 and give it a value of 3 + 3.  We can perform math operations on numbers.
 
-//////////////////PROBLEM 2////////////////////
+//Strings
+//Declare a variable called name and give it a value of your name.
 
-//Create a variable called myAge that is a number data type
+//Declare a variable called greeting and give it a value of a nice greeting.  Use either template strings or concatenation to add your name to the end of the greeting.
 
-let myName = 28;
-//////////////////PROBLEM 3////////////////////
+//Booleans
+//Declare a variable called lovesCode and give it a value of a boolean.
 
-//Create a variable called lovesCode that is a boolean data type
+//Arrays
+//Declare a variable called friends and give it a value of an array containing 3 strings, each one a name of a friend.
+//Console.log the first item in your array
 
-let lovesCode = true;
-//////////////////PROBLEM 4////////////////////
+//Objects
+//Declare a variable called me.  Make it an object with the following properties: name, age, lovesCode, friends, and greeting.  Use your previously declared variables to provide values to this object.
 
-//Create a variable called greatestFear that is undefined because we fear nothing
+//Console log the name property on your object.
+//DOT NOTATION
 
-let greatestFear;
-///////////////  ///PROBLEM 5////////////////////
+//BRACKET NOTATION
 
-//Create a variable called devMountainGoal that is null because we are just starting out
+//Add a new property called favoriteNumber and give it a value of your favorite number.
 
-let devMountainGoal = null;
-//////////////////PROBLEM 6////////////////////
+//Console log the whole object
 
-//Create a function declaration called greeting that
-//accepts name as its only parameter.
-//greeting should return the string "Hello, "
-//plus the value of the name parameter.
+//Functions
 
-function greeting (name){
-  return `Hello ${name}`
-}
-greeting('Nnaemeka');
-//////////////////PROBLEM 7////////////////////
+//Write a function called sayHello, have it return the string of hello.  Invoke it below.
 
-//Write a function expression called newGreeting.
-//Give it the same functionality as the function greeting in Problem 6.
+//Modify the above function to take in an argument of name.  Invoke it below passing in any name as a string.
 
-//Code Here
+//Create a function called sum as a function expression that takes in two parameters: num1 and num2.  Return their sum.  Invoke it below passing in any two numbers.
 
-//////////////////PROBLEM 8////////////////////
+//Write a function as an arrow function called findFirst that will take in an array.  It should return the first item in the array.
+const numsArr = [1, 2, 3, 4, 5, 6]
 
-//Create an array called groceries with the values
-//"apples", "milk", "eggs", "bread"
+//If statements
 
-//Code Here
+//Write a function called equalChecker that takes in two numbers.  If they are equal return true, if they are not return false.
 
-//////////////////PROBLEM 9////////////////////
+//Write a function called canIDrive that takes in a number, someones age.  If the person is under 16 return the string 'you can drive a bike'.  If they are between 16 and 50 return 'you can drive a car'.  Otherwise, return the string 'you can drive a cadillac'.  Invoke the function below.
 
-//Create an object saved to the variable dog.
-//The dog object should have the following properties:
-//name (a string), color (a string), age (a number),
-//and goodBoy (a boolean).
+//Scope
 
-//Code Here
+//Look at the variables and functions below.  Let's figure out what is visible where.
 
-//...access the dog's name from the object and assign it to a
-//variable called devMountainClassPet.
+let globalVar = 'I am on the global scope'
 
-//Code Here
-
-//////////////////PROBLEM 10////////////////////
-
-//Write a function called nameCheck that takes in a name parameter.
-//nameCheck should check if the name equals 'Steven'. If it does,
-// return 'What is up Steven?'
-//If the name parameter is Bryan, return 'Hey Bryan!'
-// If the name parameter is anything else, return 'Cool name, NAMEPARAM'
-// with NAMEPARAM being the name parameter being passed in (not literally NAMEPARAM)
-
-// Code here
-
-//////////////////PROBLEM 11////////////////////
-
-// Create a function called add that takes in two parameters
-// that will be numbers.
-// The add function should return the two parameters added together
-
-//Code Here
-
-//Now invoke add, passing in the numbers 3 and 4
-//storing the result in the variable mathSum.
-
-//Code Here
-
-//////////////////PROBLEM 12////////////////////
-
-//Write a function called faveColorFinder that takes in one parameter called color
-// that will be a string.
-// If the passed in color equals 'red', return 'red is a great color'
-// If the passed in color equals 'green', return 'green is a solid favorite color'
-// If the passed in color equals 'black', return 'so trendy'
-// Otherwise, you should return the string 'you need to evaluate your favorite color choice'
-
-// Code here
-
-//////////////////PROBLEM 13////////////////////
-
-let duck = "cute";
-
-function bathroom() {
-    let rubberDuck = "squeaky";
-    function bathtub() {
-        let sailorDuck = "nautical";
-    }
+function outerFn() {
+  let outerVar = 'I am scoped to outerFn'
+  console.log(globalVar)
+  console.log(outerVar)
+  function innerFn() {
+    let innerVar = 'I am scoped to innerFn'
+    console.log(globalVar)
+    console.log(outerVar)
+    console.log(innerVar)
+  }
+  innerFn()
 }
 
-function pond() {
-    let realDuck = "fluffy";
-}
-
-//There are 4 variables above: duck, rubberDuck, sailorDuck and realDuck
-//all within different scopes.
-//Given the functions and variables above, edit the arrays
-//below to contain only the appropriate variable names
-//as strings.
-
-//This array should contain the variable names (as strings) accessible in the global scope.
-let globalScope = ["duck", "sailorDuck", "rubberDuck", "realDuck"];
-
-//This array should contain the variable names (as strings) accessible in the bathroom function.
-let bathroomScope = ["duck", "sailorDuck", "rubberDuck", "realDuck"];
-
-//This array should contain the variable names (as strings) accessible in the bathtub function.
-let bathtubScope = ["duck", "sailorDuck", "rubberDuck", "realDuck"];
-
-//This array should contain the variable names (as strings) accessible in the pond function.
-let pondScope = ["duck", "sailorDuck", "rubberDuck", "realDuck"];
-
-//////////////////PROBLEM 14////////////////////
-
-//Create a variable called age with your age assigned to you
-
-// Code Here
-
-// FLASH FORWARD TO NEXT YEAR
-// reassign the value of age to be one greater than it was, because, we all get older
-
-// Code Here
-
-// Good news! We can live forever. Set your age to 999
-
-// Code Here
+// outerFn()
